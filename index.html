@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
 
-  <body class="w-3/4 container mx-auto manrope_font">
+  <body class="manrope_font">
     <!-- Banner Section -->
-    <section id="banner" class="gap-1 flex justify-around mt-14">
-      <div class="content w-1/2">
-        <h1 class="font-extrabold text-7xl/22 text-neutral-900">
+    <section id="banner" class="w-3/4 container mx-auto flex flex-col md:flex-row justify-around gap-1 mt-14">
+      <div class="content md:w-1/2">
+        <h1 class="font-extrabold text-5xl/20 lg:text-7xl/22 text-neutral-900">
           It's good tea time at The Tea House
         </h1>
         <p class="text-xl text-neutral-500 mt-7">
@@ -27,29 +27,31 @@
           Taste Buds.
         </p>
         <button
-          class="py-4 px-10 bg-linear-to-r from-orange-500 to-red-500 text-white font-bold text-lg mt-7 rounded-md flex justify-between"
+          class="py-4 px-10 bg-linear-to-r from-orange-500 to-red-500 text-white font-bold text-lg mt-7 rounded-md flex justify-between cursor-pointer"
         >
           Explore More
           <i class="fa-solid fa-arrow-up-right-from-square text-white p-1"></i>
         </button>
       </div>
 
-      <div class="img-section w-1/2">
-        <img
-          src="images/banner.png"
-          alt="tea photo"
-          srcset=""
-          class="relative"
-        />
+      <div class="img-section md:w-1/2">
+        <div class="relative top-20">
+          <img
+            src="images/banner.png"
+            alt="tea photo"
+            srcset=""
+            class=""
+          />
 
-        <!-- rating box -->
-        <div
-          class="rating-box bg-white w-50 rounded-lg flex justify-center items-center p-3 shadow-lg absolute top-90 right-100"
-        >
-          <i class="fa-solid fa-star text-yellow-400 text-3xl"></i>
-          <div class="ml-1 content">
-            <h5 class="font-bold text-xl">5.00</h5>
-            <p>Trust Pilot Ratings</p>
+          <!-- rating box -->
+          <div
+            class="rating-box bg-white w-50 rounded-lg flex justify-center items-center p-3 shadow-lg absolute left-25 bottom-5"
+          >
+            <i class="fa-solid fa-star text-yellow-400 text-3xl"></i>
+            <div class="ml-1 content">
+              <p class="font-bold text-xl">5.00</p>
+              <p>Trust Pilot Ratings</p>
+            </div>
           </div>
         </div>
       </div>
